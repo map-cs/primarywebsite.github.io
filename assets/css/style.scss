@@ -2,22 +2,24 @@
 # Only the main Sass file needs front matter
 ---
 
+/* 1. Override minima core variables BEFORE import */
+$brand-color: #66a3ff;  /* primary accent (light blue) */
+$link-color:  #004080;  /* dark blue links */
+
+/* Optional extras if you want them consistent */
+$brand-color-light: lighten($brand-color, 15%);
+$brand-color-dark:  darken($brand-color, 15%);
+
+/* 2. Import minima so it uses the new variables */
 @import "minima";
 
-/* MAP-CS custom color scheme: light blue primary, dark blue accent */
-
-/* Colors */
-$mapcs-light-blue: #e6f2ff; /* primary background */
-$mapcs-mid-blue:   #66a3ff; /* header background */
-$mapcs-dark-blue:  #004080; /* accent, links */
-$mapcs-border:     #00264d;
-$mapcs-link-hover: #001633;
+/* 3. Additional explicit tweaks (on top of brand-color) */
 
 /* Header & site title bar */
 .site-header {
-  background-color: $mapcs-mid-blue;
-  border-top: 5px solid $mapcs-dark-blue;
-  border-bottom: 1px solid $mapcs-border;
+  background-color: #66a3ff;
+  border-top: 5px solid #004080;
+  border-bottom: 1px solid #00264d;
 }
 
 /* Site title link */
@@ -27,7 +29,7 @@ $mapcs-link-hover: #001633;
 }
 
 .site-title:hover {
-  color: $mapcs-light-blue;
+  color: #e6f2ff;
 }
 
 /* Top navigation links */
@@ -36,12 +38,12 @@ $mapcs-link-hover: #001633;
 }
 
 .site-nav .page-link:hover {
-  color: $mapcs-light-blue;
+  color: #e6f2ff;
 }
 
 /* Body background and text width */
 body {
-  background-color: $mapcs-light-blue;
+  background-color: #e6f2ff;
 }
 
 .page-content {
@@ -51,19 +53,19 @@ body {
 /* Links in main content */
 a,
 a:visited {
-  color: $mapcs-dark-blue;
+  color: #004080;
 }
 
 a:hover {
-  color: $mapcs-link-hover;
+  color: #001633;
   text-decoration: underline;
 }
 
 /* Footer */
 .site-footer {
-  background-color: $mapcs-mid-blue;
+  background-color: #66a3ff;
   color: #f0f4ff;
-  border-top: 1px solid $mapcs-border;
+  border-top: 1px solid #00264d;
 }
 
 .site-footer a,
@@ -72,50 +74,7 @@ a:hover {
 }
 
 .site-footer a:hover {
-  color: $mapcs-light-blue;
-}
-
-
-body {
-  background-color: #e6f2ff !important;
-}
-
-.site-header {
-  background-color: #66a3ff !important;
-  border-top: 5px solid #004080 !important;
-  border-bottom: 1px solid #00264d !important;
-}
-
-.site-title,
-.site-title:visited {
-  color: #ffffff !important;
-}
-
-.site-title:hover {
-  color: #e6f2ff !important;
-}
-
-.site-nav .page-link {
-  color: #f5f9ff !important;
-}
-
-.site-nav .page-link:hover {
-  color: #e6f2ff !important;
-}
-
-.site-footer {
-  background-color: #66a3ff !important;
-  color: #f0f4ff !important;
-  border-top: 1px solid #00264d !important;
-}
-
-.site-footer a,
-.site-footer a:visited {
-  color: #ffffff !important;
-}
-
-.site-footer a:hover {
-  color: #e6f2ff !important;
+  color: #e6f2ff;
 }
 
 
