@@ -1,3 +1,14 @@
 title: MAP-CS Grant
 description: MAP-CS project website
 theme: minima
+
+minima:
+  nav_pages:
+    - index.md
+    - welcome.md
+    - overview.md
+    - nsf-sigcse-acm.md
+    - supporting-material/index.md
+    - process-workbook/index.md
+    - other/index.md
+    - contact.md
