@@ -1,0 +1,66 @@
+---
+# Only front matter so Jekyll processes this file
+---
+
+@import "minima";
+
+/* MAP-CS custom color scheme */
+
+/* Header & site title bar */
+.site-header {
+  background-color: #003366; /* deep blue */
+  border-top: 5px solid #ff9900; /* accent stripe */
+  border-bottom: 1px solid #001b3d;
+}
+
+/* Site title link */
+.site-title, .site-title:visited {
+  color: #ffffff;
+}
+
+.site-title:hover {
+  color: #ffdd88;
+}
+
+/* Top navigation links */
+.site-nav .page-link {
+  color: #f0f0f0;
+}
+
+.site-nav .page-link:hover {
+  color: #ffdd88;
+}
+
+/* Body background and text */
+body {
+  background-color: #f8f9fb;
+}
+
+.page-content {
+  max-width: 900px;
+}
+
+/* Links in main content */
+a, a:visited {
+  color: #0056b3;
+}
+
+a:hover {
+  color: #002b80;
+  text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #003366;
+  color: #e0e0e0;
+  border-top: 1px solid #001b3d;
+}
+
+.site-footer a, .site-footer a:visited {
+  color: #ffdd88;
+}
+
+.site-footer a:hover {
+  color: #ffffff;
+}
