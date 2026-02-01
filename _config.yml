@@ -2,6 +2,10 @@ title: MAP-CS Grant
 description: MAP-CS project website
 theme: minima
 
+# Optional: turn on dark header / accent
+minima:
+  skin: classic
+
 minima:
   nav_pages:
     - index.md
