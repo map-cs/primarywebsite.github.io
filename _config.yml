@@ -1,12 +1,33 @@
 title: MAP-CS Grant
 description: MAP-CS project website
+url: "https://map-cs.org"
+baseurl: ""        # keep empty for apex domain
+
 theme: minima
 
-# Optional: turn on dark header / accent
+# Minima configuration
+minima:
+  skin: classic        # base skin; your SCSS will override colors
+  social_links: []     # add later if you want social icons
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files from the site build if needed
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Navigation (matches your pages)
+# These files must exist with matching paths & front matter (layout: page, title: ...)
 minima:
   skin: classic
-
-minima:
   nav_pages:
     - index.md
     - welcome.md
