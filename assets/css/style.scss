@@ -1,39 +1,47 @@
 ---
-# Only front matter so Jekyll processes this file
+# Let Jekyll process this file
 ---
 
 @import "minima";
 
-/* MAP-CS custom color scheme */
+/* MAP-CS custom color scheme: light blue primary, dark blue accent */
+
+/* Colors */
+$mapcs-light-blue: #e6f2ff; /* primary background */
+$mapcs-mid-blue:   #66a3ff; /* header background */
+$mapcs-dark-blue:  #004080; /* accent, links */
+$mapcs-border:     #00264d;
+$mapcs-link-hover: #001633;
 
 /* Header & site title bar */
 .site-header {
-  background-color: #003366; /* deep blue */
-  border-top: 5px solid #ff9900; /* accent stripe */
-  border-bottom: 1px solid #001b3d;
+  background-color: $mapcs-mid-blue;
+  border-top: 5px solid $mapcs-dark-blue;
+  border-bottom: 1px solid $mapcs-border;
 }
 
 /* Site title link */
-.site-title, .site-title:visited {
+.site-title,
+.site-title:visited {
   color: #ffffff;
 }
 
 .site-title:hover {
-  color: #ffdd88;
+  color: $mapcs-light-blue;
 }
 
 /* Top navigation links */
 .site-nav .page-link {
-  color: #f0f0f0;
+  color: #f5f9ff;
 }
 
 .site-nav .page-link:hover {
-  color: #ffdd88;
+  color: $mapcs-light-blue;
 }
 
-/* Body background and text */
+/* Body background and text width */
 body {
-  background-color: #f8f9fb;
+  background-color: $mapcs-light-blue;
 }
 
 .page-content {
@@ -41,26 +49,28 @@ body {
 }
 
 /* Links in main content */
-a, a:visited {
-  color: #0056b3;
+a,
+a:visited {
+  color: $mapcs-dark-blue;
 }
 
 a:hover {
-  color: #002b80;
+  color: $mapcs-link-hover;
   text-decoration: underline;
 }
 
 /* Footer */
 .site-footer {
-  background-color: #003366;
-  color: #e0e0e0;
-  border-top: 1px solid #001b3d;
+  background-color: $mapcs-mid-blue;
+  color: #f0f4ff;
+  border-top: 1px solid $mapcs-border;
 }
 
-.site-footer a, .site-footer a:visited {
-  color: #ffdd88; 
+.site-footer a,
+.site-footer a:visited {
+  color: #ffffff;
 }
 
 .site-footer a:hover {
-  color: #ffffff;
+  color: $mapcs-light-blue;
 }
