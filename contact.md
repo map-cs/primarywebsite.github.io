@@ -5,6 +5,15 @@ layout: default
 
 # Contact
 
-Provide primary contact information for the MAP-CS project.
+_**Contact information will be coming soon!**_
 
-Include names, roles, email addresses, and any preferred communication channels for collaborators and interested institutions.
+**Project Members:** 
+- Dr. Amanda Holland-Minkley (PI, Washington and Jefferson College) 
+- Dr. Janet Davis (Senior Personnel, Whitman College) 
+- Dr. Karl Schmitt (Co-PI, Trinity Christian College)
+- Dr. Jim Teresco (Co-PI, Siena College) 
+- Dr. Andrea Tartaro (Consultant, Furman University)
+- Dr. Jakob E. Barnard (Consultant, University of Jamestown) 
+- Dr. Grant Braught (Consultant, Dickinson College)
+
+Website is managed and maintained by Dr. Jakob E. Barnard.
