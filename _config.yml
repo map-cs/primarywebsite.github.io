@@ -1,12 +1,32 @@
 title: MAP-CS Grant
 description: MAP-CS project website
-
 url: "https://map-cs.org"
-baseurl: ""      # keep empty for apex/custom domain
+baseurl: ""      # keep empty for apex domain
 
-theme: jekyll-theme-primer
+theme: minima
+
+minima:
+  skin: classic
+  nav_pages:
+
+   - index.md
+     - welcome.md
+       - overview.md
+       - nsf-sigcse-acm.md
+       - supporting-material/index.md
+       - process-workbook/index.md
+       - other/index.md
+       - contact.md
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 exclude:
+
   - README.md
   - Gemfile
   - Gemfile.lock
