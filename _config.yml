@@ -7,20 +7,20 @@ baseurl: ""      # keep empty for apex domain
 
 remote_theme: pages-themes/minimal@v0.2.0
 
-minima:
-  skin: classic
-  nav_pages:
-    - index.md
-    - welcome.md
-    - overview.md
-    - nsf-sigcse-acm.md
-    - supporting-material/index.md
-    - process-workbook/index.md
-    - other/index.md
-    - contact.md
+#minima:
+#  skin: classic
+#  nav_pages:
+#    - index.md
+#    - welcome.md
+#    - overview.md
+#    - nsf-sigcse-acm.md
+#    - supporting-material/index.md
+#    - process-workbook/index.md
+#    - other/index.md
+#    - contact.md
 
-markdown: kramdown
-highlighter: rouge
+#markdown: kramdown
+#highlighter: rouge
 
 plugins:
   - jekyll-remote-theme # add this line to the plugins list if you already have one
