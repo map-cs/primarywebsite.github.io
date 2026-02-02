@@ -15,16 +15,6 @@ just_the_docs:
   # Set to "dark", "light", or "auto"
   color_scheme: auto
 
-  nav_pages:
-    - index.md
-    - welcome.md
-    - overview.md
-    - nsf-sigcse-acm.md
-    - supporting-material/index.md
-    - process-workbook/index.md
-    - other/index.md
-    - contact.md
-
 # Optional: upper-right aux link (edit or remove)
 #aux_links:
 #  "MAP-CS GitHub Repository":
