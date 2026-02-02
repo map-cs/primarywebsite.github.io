@@ -3,10 +3,7 @@ description: MAP-CS project website
 url: "https://map-cs.org"
 baseurl: ""      # keep empty for apex domain
 
-theme: minima
-
-minima:
-  skin: classic
+theme: just-the-docs
   nav_pages:
     - index.md
     - welcome.md
