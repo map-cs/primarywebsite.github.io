@@ -2,17 +2,9 @@ title: MAP-CS Grant
 description: MAP-CS project website
 
 url: "https://map-cs.org"
-baseurl: ""      # leave empty for apex/custom domain
+baseurl: ""      # keep empty for apex/custom domain
 
-# Use Just the Docs as a remote theme
-remote_theme: just-the-docs/just-the-docs@v0.5.2
-
-plugins:
-  - jekyll-remote-theme
-
-# Basic Just the Docs configuration
-just_the_docs:
-  color_scheme: light
+theme: jekyll-theme-primer
 
 exclude:
   - README.md
