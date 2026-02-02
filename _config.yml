@@ -5,6 +5,8 @@ baseurl: ""      # keep empty for apex domain
 
 theme: minima
 
+remote_theme: pages-themes/minimal@v0.2.0
+
 minima:
   skin: classic
   nav_pages:
@@ -23,6 +25,7 @@ highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 
 exclude:
   - README.md
