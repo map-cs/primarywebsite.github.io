@@ -1,9 +1,11 @@
 title: MAP-CS Grant
 description: MAP-CS project website
 url: "https://map-cs.org"
-baseurl: ""      # keep empty for apex domain
+baseurl: ""
+theme: minima
 
-theme: just-the-docs
+minima:
+  skin: classic
   nav_pages:
     - index.md
     - welcome.md
