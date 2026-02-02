@@ -1,6 +1,6 @@
 ---
 title: MAP-CS Grant
-layout: default
+layout: page
 ---
 
 # MAP-CS Grant
