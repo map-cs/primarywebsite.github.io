@@ -16,4 +16,4 @@ _**Contact information will be coming soon!**_
 - Dr. Jakob E. Barnard (Consultant, University of Jamestown) 
 - Dr. Grant Braught (Consultant, Dickinson College)
 
-Website is managed and maintained by Dr. Jakob E. Barnard.
+Website is managed and maintained by Dr. Jakob E. Barnard. 
