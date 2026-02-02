@@ -6,20 +6,22 @@ permalink: /nsf-sigcse-acm/
 
 # NSF Support and Community Context
 
-## NSF Award
+## NSF Awards
 
 The **Mission Aligned Programs for Computer Science (MAP‑CS)** project is supported by the National Science Foundation.  
 
 - **Primary NSF Award:** [NSF Award #2517967](https://www.nsf.gov/awardsearch/show-award?AWD_ID=2517967)  
-- **Program:** NSF IUES
-- **Project Title:** Transforming Computer Science Curriculum Design at Liberal Arts Institutions 
-- **Project Duration:** Sept. 15, 2025 - Sept 15, 2028 
+- **Related NSF Award:** [NSF Award #2517968](https://www.nsf.gov/awardsearch/show-award?AWD_ID=2517968&HistoricalAwards=false)  
+- **Related NSF Award:** [NSF Award #2517969](https://www.nsf.gov/awardsearch/show-award?AWD_ID=2517969&HistoricalAwards=false)  
+- **Program:** NSF IUES  
+- **Project Title:** Transforming Computer Science Curriculum Design at Liberal Arts Institutions  
+- **Project Duration:** Sept. 15, 2025 – Sept. 15, 2028  
 
-Please consult the NSF award page for the official abstract and full public details of the grant.
+Please consult the NSF award pages for the official abstracts and full public details of these grants.
 
 ## Related Co‑PI Grants
 
-In addition to the primary MAP‑CS award, co‑principal investigators on this project are connected to related NSF‑funded efforts that inform and complement this work, grant is listed under three NSF award numbers.
+In addition to the primary MAP‑CS award, co‑principal investigators on this project are connected to related NSF‑funded efforts that inform and complement this work, and the MAP‑CS grant is listed under three NSF award numbers.
 
 ## SIGCSE and ACM Connections
 
