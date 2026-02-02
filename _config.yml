@@ -2,7 +2,7 @@ title: MAP-CS Grant
 description: MAP-CS project website
 
 url: "https://map-cs.org"
-baseurl: ""      # keep empty for apex domain/custom domain
+baseurl: ""      # leave empty for apex/custom domain
 
 # Use Just the Docs as a remote theme
 remote_theme: just-the-docs/just-the-docs@v0.5.2
@@ -12,13 +12,7 @@ plugins:
 
 # Basic Just the Docs configuration
 just_the_docs:
-  # Set to "dark", "light", or "auto"
-  color_scheme: auto
-
-# Optional: upper-right aux link (edit or remove)
-#aux_links:
-#  "MAP-CS GitHub Repository":
-#    - "https://github.com/YOUR-USERNAME/YOUR-REPO"
+  color_scheme: light
 
 exclude:
   - README.md
