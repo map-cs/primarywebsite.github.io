@@ -25,7 +25,7 @@ https://creativecommons.org/licenses/by/4.0/legalcode
 
 When citing or reusing MAP-CS materials, please follow recommended Creative
 Commons attribution practices (e.g., including title, author, source, and
-license).[web:134][web:131]
+license).[web:134][web:131] 
 
 ---
 
