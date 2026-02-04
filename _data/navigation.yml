@@ -1,0 +1,35 @@
+- name: Home
+  link: /
+
+- name: Project
+  link: /overview/
+  dropdown:
+    - name: Overview
+      link: /overview/
+    - name: Goals & Outcomes
+      link: /goals-outcomes/
+    - name: Partners
+      link: /partners/
+
+- name: Process Workbook
+  link: /process-workbook/
+  dropdown:
+    - name: Workbook Overview
+      link: /process-workbook/
+    - name: Interactive Tool
+      link: /process-workbook/interactive-tool/
+    - name: Faculty Resources
+      link: /process-workbook/faculty-resources/
+
+- name: Supporting Materials
+  link: /supporting-material/
+  dropdown:
+    - name: Liberal Arts Committee
+      link: /supporting-material/liberal-arts-committee/
+    - name: Presentations & Publications
+      link: /supporting-material/presentations/
+    - name: Assessment Materials
+      link: /supporting-material/assessment/
+
+- name: Contact
+  link: /contact/
