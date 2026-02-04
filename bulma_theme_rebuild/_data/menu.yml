@@ -1,0 +1,13 @@
+label: "Process Workbook"
+items:
+  - name: Overview
+    link: /process-workbook/
+  - name: Interactive Tool
+    link: /process-workbook/interactive-tool/
+  - name: Faculty Resources
+    link: /process-workbook/faculty-resources/
+    items:
+      - name: Intro Module
+        link: /process-workbook/faculty-resources/intro-module/
+      - name: Advanced Module
+        link: /process-workbook/faculty-resources/advanced-module/
