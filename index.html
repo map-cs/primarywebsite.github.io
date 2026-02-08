@@ -164,4 +164,498 @@
       letter-spacing: 0.08em;
       color: var(--muted);
       background: rgba(15, 23, 42, 0.03);
-      bo
+      border-radius: 999px;
+      padding: 0.27rem 0.7rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-pill span {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 3px rgba(255,184,28,0.4);
+    }
+
+    .abstract-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .abstract-text {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 0.9rem;
+    }
+
+    .abstract-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      padding-top: 0.5rem;
+      border-top: 1px dashed rgba(148,163,184,0.35);
+    }
+
+    .abstract-meta strong {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 0.5rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 1.1rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #3b2b00;
+      box-shadow: 0 8px 18px rgba(124, 92, 0, 0.35);
+    }
+
+    .btn-primary:hover {
+      background: #ffc74f;
+      transform: translateY(-1px);
+      box-shadow: 0 12px 24px rgba(124, 92, 0, 0.4);
+      text-decoration: none;
+    }
+
+    .btn-outline {
+      background: rgba(15, 23, 42, 0.04);
+      color: var(--white);
+      border: 1px solid rgba(226, 232, 240, 0.3);
+    }
+
+    .btn-outline:hover {
+      background: rgba(15, 23, 42, 0.16);
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+
+    .hero-notice {
+      font-size: 0.8rem;
+      color: #dbeafe;
+    }
+
+    .hero-notice a {
+      color: #fef3c7;
+    }
+
+    .hero-notice a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 2.75rem;
+    }
+
+    section h2 {
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
+    }
+
+    .section-intro {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+      max-width: 46rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      align-items: start;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: var(--radius);
+      padding: 1.1rem 1.2rem;
+      border: 1px solid rgba(15, 23, 42, 0.06);
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+    }
+
+    .pill {
+      font-size: 0.78rem;
+      padding: 0.18rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.03);
+      color: var(--muted);
+    }
+
+    .links-list {
+      list-style: none;
+      font-size: 0.9rem;
+    }
+
+    .links-list li + li {
+      margin-top: 0.4rem;
+    }
+
+    .links-list a {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.25rem;
+    }
+
+    .links-list small {
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      background: rgba(15, 23, 42, 0.03);
+      padding: 0.22rem 0.6rem;
+      border-radius: 999px;
+      margin-bottom: 0.5rem;
+    }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 0 3px rgba(34,197,94,0.25);
+    }
+
+    footer {
+      border-top: 1px solid rgba(148,163,184,0.25);
+      background: #0b1120;
+      color: #9ca3af;
+      padding: 1.4rem 1.5rem;
+      font-size: 0.8rem;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .footer-links a {
+      color: #e5e7eb;
+      font-size: 0.8rem;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .nsf-disclaimer {
+      max-width: 620px;
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-card {
+        order: -1;
+      }
+
+      header {
+        position: static;
+      }
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding-inline: 1.1rem;
+      }
+      header {
+        padding-inline: 1.1rem;
+      }
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        justify-content: flex-start;
+      }
+      .hero-card {
+        padding: 1.4rem 1.3rem 1.2rem 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="logo">
+        <div class="logo-mark" aria-hidden="true"></div>
+        <div>
+          <div class="logo-text-main">MAP-CS</div>
+          <div class="logo-text-sub">Mapping Access to Pathways in CS</div>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#abstract">Abstract</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#nsf-links">NSF Links</a></li>
+          <li><a href="#materials">Materials</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Abstract -->
+    <section class="hero" id="abstract">
+      <div class="hero-cta">
+        <h1 class="hero-heading">MAP-CS: Expanding Equitable Pathways in Computer Science</h1>
+        <p class="hero-tagline">
+          A research-practice partnership supporting teachers, schools, and communities as they build sustainable, inclusive computer science pathways for all learners, with support from the U.S. National Science Foundation.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#nsf-links" class="btn btn-primary">View NSF Program Links</a>
+          <a href="#materials" class="btn btn-outline">Explore Project Materials</a>
+        </div>
+
+        <p class="hero-notice">
+          MAP-CS is supported by the U.S. National Science Foundation under the Computer Science for All (CSforAll: Research and RPPs) program.<br>
+          Learn more about the program at
+          <a href="https://www.nsf.gov/funding/opportunities/csforall-research-rpps-computer-science-all/505359/nsf24-555" target="_blank" rel="noopener noreferrer">
+            nsf.gov
+          </a>.
+        </p>
+      </div>
+
+      <article class="hero-card" aria-label="Project abstract">
+        <div class="hero-pill"><span></span> Project abstract</div>
+        <h2 class="abstract-title">Abstract</h2>
+        <p class="abstract-text">
+          MAP-CS (Mapping Access to Pathways in Computer Science) is a multi-institution research-practice partnership focused on broadening participation in K–12 computer science education. The project brings together researchers, school districts, and community partners to design, study, and refine evidence-based strategies that help all students access high-quality computer science learning opportunities. In collaboration with educators, MAP-CS examines local contexts, builds CS pathways across grade levels, and supports teachers with professional learning and classroom resources that center equity, inclusion, and sustainability.
+        </p>
+        <div class="abstract-meta">
+          <div><strong>Funding agency:</strong> U.S. National Science Foundation</div>
+          <div><strong>Program:</strong> CSforAll: Research and RPPs</div>
+          <div><strong>Project type:</strong> Research–Practice Partnership</div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Goals & Focus -->
+    <section id="goals">
+      <h2>Project focus</h2>
+      <p class="section-intro">
+        MAP-CS aligns with national efforts to ensure that every student has the opportunity to participate in rigorous computer science and computational thinking learning experiences across K–12.[web:2]
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Supporting K–12 CS pathways</h3>
+          <p>
+            Working with districts and schools to define and strengthen multi-grade pathways that integrate computer science and computational thinking from early grades through high school.
+          </p>
+          <div class="pill-list">
+            <span class="pill">K–12 pathways</span>
+            <span class="pill">Curriculum alignment</span>
+            <span class="pill">District partnerships</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Teacher learning and support</h3>
+          <p>
+            Partnering with educators to co-design professional learning, instructional materials, and ongoing communities of practice that enable teachers to teach rigorous, inclusive CS courses.
+          </p>
+          <div class="pill-list">
+            <span class="pill">Professional development</span>
+            <span class="pill">Communities of practice</span>
+            <span class="pill">Instructional materials</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Equity-centered research</h3>
+          <p>
+            Conducting mixed-methods research to understand how local conditions, policies, and practices shape who participates in computer science and how pathways can be more equitable and sustainable.
+          </p>
+          <div class="pill-list">
+            <span class="pill">Broadening participation</span>
+            <span class="pill">Inclusive practices</span>
+            <span class="pill">Sustainable change</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NSF Links -->
+    <section id="nsf-links">
+      <h2>NSF program and related links</h2>
+      <p class="section-intro">
+        The MAP-CS project is supported by the U.S. National Science Foundation and builds on national initiatives to expand computer science education across preK–12 schools.[web:2][web:7]
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="badge"><span class="badge-dot"></span> NSF program information</div>
+          <ul class="links-list">
+            <li>
+              <a href="https://www.nsf.gov/funding/opportunities/csforall-research-rpps-computer-science-all/505359/nsf24-555"
+                 target="_blank" rel="noopener noreferrer">
+                CSforAll: Research and RPPs program page
+              </a>
+              <br><small>Synopsis, solicitation, and program contacts.[web:2]</small>
+            </li>
+            <li>
+              <a href="https://www.nsf.gov/cise"
+                 target="_blank" rel="noopener noreferrer">
+                NSF Directorate for Computer and Information Science and Engineering (CISE)
+              </a>
+              <br><small>Directorate overview, priorities, and related funding opportunities.[web:7]</small>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="badge"><span class="badge-dot"></span> NSF award details</div>
+          <p>
+            A direct link to the MAP-CS NSF award page will appear here once the public award record is available in the NSF award database.
+          </p>
+          <p style="font-size:0.85rem;color:var(--muted);margin-top:0.4rem;">
+            In the meantime, you can search for the project by title or award number using the NSF awards search:
+          </p>
+          <ul class="links-list">
+            <li>
+              <a href="https://www.nsf.gov/awardsearch"
+                 target="_blank" rel="noopener noreferrer">
+                NSF Award Search
+              </a>
+              <br><small>Search by program, institution, PI, or keywords.</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Materials / Updates -->
+    <section id="materials">
+      <h2>Project materials and updates</h2>
+      <p class="section-intro">
+        This site will host public-facing materials from the MAP-CS project, including research briefs, implementation guides, teacher resources, and conference presentations as they are released.[web:1]
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>For educators and districts</h3>
+          <p>
+            Resources to support K–12 computer science implementation, including pathway maps, sample course sequences, professional learning materials, and tools for engaging local stakeholders.
+          </p>
+          <p style="font-size:0.85rem;color:var(--muted);margin-top:0.3rem;">
+            Check back for downloadable guides and templates as they become available.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>For researchers and partners</h3>
+          <p>
+            Public data instruments, study overviews, and publications that share lessons learned about designing, scaling, and sustaining equitable CS pathways within diverse local contexts.
+          </p>
+          <p style="font-size:0.85rem;color:var(--muted);margin-top:0.3rem;">
+            Links to open-access publications and presentation materials will be posted here.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="nsf-disclaimer">
+        MAP-CS is supported by the U.S. National Science Foundation. Any opinions, findings, and conclusions or recommendations expressed on this site are those of the authors and do not necessarily reflect the views of the National Science Foundation.
+      </div>
+      <div class="footer-links">
+        <a href="#abstract">Abstract</a>
+        <a href="#goals">Project focus</a>
+        <a href="#nsf-links">NSF links</a>
+        <a href="#materials">Materials</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for in-page navigation
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll('a[href^="#"]');
+      for (const link of links) {
+        link.addEventListener("click", function (e) {
+          const targetId = this.getAttribute("href");
+          if (targetId === "#" || targetId.length === 1) return;
+          const target = document.querySelector(targetId);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          history.replaceState(null, "", targetId);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
