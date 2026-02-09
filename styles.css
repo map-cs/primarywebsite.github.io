@@ -216,7 +216,7 @@ nav a:hover {
   width: 6px;
   height: 6px;
   border-radius: 999px;
-  background: var(--accent);
+  background: #22c55e;
   box-shadow: 0 0 0 3px rgba(255,184,28,0.4);
 }
 
