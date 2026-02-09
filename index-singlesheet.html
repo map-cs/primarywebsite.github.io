@@ -1,0 +1,718 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MAP-CS Grant | MAP-CS.org</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MAP-CS Grant project website, sharing an overview of the grant, supporting materials, and ongoing project updates.">
+  <style>
+    :root {
+      --primary: #005a9c;
+      --primary-dark: #00406f;
+      --accent: #ffb81c;
+      --bg: #f5f7fb;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --white: #ffffff;
+      --max-width: 960px;
+      --radius: 10px;
+      --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top left, #e3f2ff 0, #f5f7fb 40%, #ffffff 100%);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 60%);
+      color: var(--white);
+      padding: 1.25rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.35);
+    }
+
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .logo-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background: radial-gradient(circle at 25% 25%, #ffffff 0, #ffdd80 30%, #ffb81c 60%, #cc8a00 100%);
+      box-shadow: 0 0 0 2px rgba(255,255,255,0.5), 0 6px 14px rgba(15,23,42,0.55);
+      position: relative;
+    }
+
+    .logo-mark::before {
+      content: "";
+      position: absolute;
+      inset: 25%;
+      border-radius: 999px;
+      border: 2px solid rgba(0, 0, 0, 0.12);
+      transform: rotate(18deg);
+    }
+
+    .logo-text-main {
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      font-size: 1.1rem;
+    }
+
+    .logo-text-sub {
+      font-size: 0.78rem;
+      opacity: 0.9;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    nav a {
+      color: #e5f2ff;
+      font-weight: 500;
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.1s ease;
+    }
+
+    nav a:hover {
+      background: rgba(15, 23, 42, 0.3);
+      color: #ffffff;
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2.25rem 1.5rem 3rem 1.5rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
+      gap: 2.5rem;
+      align-items: center;
+      margin-bottom: 2.75rem;
+    }
+
+    .hero-heading {
+      font-size: clamp(2rem, 3vw, 2.4rem);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-tagline {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 34rem;
+    }
+
+    .hero-card {
+      background: var(--white);
+      border-radius: 18px;
+      padding: 1.75rem 1.75rem 1.5rem 1.75rem;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(15,23,42,0.05);
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      background: rgba(15, 23, 42, 0.03);
+      border-radius: 999px;
+      padding: 0.27rem 0.7rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-pill span {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 3px rgba(255,184,28,0.4);
+    }
+
+    .abstract-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .abstract-text {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 0.9rem;
+    }
+
+    .abstract-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      padding-top: 0.5rem;
+      border-top: 1px dashed rgba(148,163,184,0.35);
+    }
+
+    .abstract-meta strong {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 0.5rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 1.1rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #3b2b00;
+      box-shadow: 0 8px 18px rgba(124, 92, 0, 0.35);
+    }
+
+    .btn-primary:hover {
+      background: #ffc74f;
+      transform: translateY(-1px);
+      box-shadow: 0 12px 24px rgba(124, 92, 0, 0.4);
+      text-decoration: none;
+    }
+
+    .btn-outline {
+      background: rgba(15, 23, 42, 0.04);
+      color: var(--white);
+      border: 1px solid rgba(226, 232, 240, 0.3);
+    }
+
+    .btn-outline:hover {
+      background: rgba(15, 23, 42, 0.16);
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+
+    .hero-notice {
+      font-size: 0.8rem;
+      color: #dbeafe;
+    }
+
+    .hero-notice a {
+      color: var(--muted);
+    }
+
+    .hero-notice a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 2.75rem;
+    }
+
+    section h2 {
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
+    }
+
+    .section-intro {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+      max-width: 46rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      align-items: start;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: var(--radius);
+      padding: 1.1rem 1.2rem;
+      border: 1px solid rgba(15, 23, 42, 0.06);
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+    }
+
+    .pill {
+      font-size: 0.78rem;
+      padding: 0.18rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.03);
+      color: var(--muted);
+    }
+
+    .links-list {
+      list-style: none;
+      font-size: 0.9rem;
+    }
+
+    .links-list li + li {
+      margin-top: 0.4rem;
+    }
+
+    .links-list a {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.25rem;
+    }
+
+    .links-list small {
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      background: rgba(15, 23, 42, 0.03);
+      padding: 0.22rem 0.6rem;
+      border-radius: 999px;
+      margin-bottom: 0.5rem;
+    }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 0 3px rgba(34,197,94,0.25);
+    }
+
+    footer {
+      border-top: 1px solid rgba(148,163,184,0.25);
+      background: #0b1120;
+      color: #9ca3af;
+      padding: 1.4rem 1.5rem;
+      font-size: 0.8rem;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .footer-links a {
+      color: #e5e7eb;
+      font-size: 0.8rem;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .nsf-disclaimer {
+      max-width: 620px;
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-card {
+        order: -1;
+      }
+
+      header {
+        position: static;
+      }
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding-inline: 1.1rem;
+      }
+      header {
+        padding-inline: 1.1rem;
+      }
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        justify-content: flex-start;
+      }
+      .hero-card {
+        padding: 1.4rem 1.3rem 1.2rem 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="logo">
+        <div class="logo-mark" aria-hidden="true"></div>
+        <div>
+          <div class="logo-text-main">MAP-CS</div>
+          <div class="logo-text-sub">Mission Aligned Programs for CS</div>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#abstract">Abstract</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#nsf-links">NSF Links</a></li>
+          <li><a href="#nsf-support">NSF Support</a></li>
+          <li><a href="#materials">Materials</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Abstract -->
+    <section class="hero" id="abstract">
+      <div class="hero-cta">
+        <h1 class="hero-heading">MAP-CS: Transforming Computer Science Curriculum Design</h1>
+        <p class="hero-tagline">
+          A multi-institution collaboration supporting mission-aligned computer science programs at liberal arts institutions, with support from the U.S. National Science Foundation.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#nsf-support" class="btn btn-primary">View NSF Awards</a>
+          <a href="#materials" class="btn btn-primary">Explore Project Materials</a>
+		  <a href="https://computing-in-the-liberal-arts.github.io/" class="btn btn-outline" target="_blank" rel="noopener noreferrer"> Committee Website</a>
+        </div>
+
+        <p class="hero-tagline">
+          MAP-CS is supported by the U.S. National Science Foundation through multiple award numbers under the NSF IUES program.
+        </p>
+      </div>
+
+      <article class="hero-card" aria-label="Project abstract">
+        <div class="hero-pill"><span></span> Project abstract</div>
+        <h2 class="abstract-title">Abstract</h2>
+        <p class="abstract-text">
+          MAP-CS (Mission Aligned Programs for Computer Science) is a research-practice collaboration focused on transforming computer science curriculum design at liberal arts institutions. The project partners faculty, departments, and institutional leaders to develop and study CS programs that are deeply integrated with institutional missions, values, and local community contexts. Through iterative design, implementation, and assessment, MAP-CS aims to build sustainable models for CS pathways that broaden participation and align with liberal arts traditions.
+        </p>
+        <div class="abstract-meta">
+          <div><strong>Funding agency:</strong> U.S. National Science Foundation</div>
+          <div><strong>Program:</strong> NSF IUES</div>
+          <div><strong>Project duration:</strong> Sept. 15, 2025 – Sept. 15, 2028</div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Goals & Focus -->
+    <section id="goals">
+      <h2>Project focus</h2>
+      <p class="section-intro">
+        MAP-CS explores how computer science can be designed and sustained as a mission-aligned program within liberal arts institutions, with attention to curriculum, pathways, and institutional change.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Curriculum and pathways</h3>
+          <p>
+            Designing CS curricula and course sequences that reflect liberal arts values, support diverse student goals, and connect CS with other disciplines across campus.
+          </p>
+          <div class="pill-list">
+            <span class="pill">Curriculum design</span>
+            <span class="pill">Pathways and tracks</span>
+            <span class="pill">Interdisciplinary CS</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Institutional alignment</h3>
+          <p>
+            Working with departments and administrators to align CS programs with institutional missions, strategic plans, and community partnerships.
+          </p>
+          <div class="pill-list">
+            <span class="pill">Mission alignment</span>
+            <span class="pill">Institutional change</span>
+            <span class="pill">Community engagement</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Broadening participation</h3>
+          <p>
+            Examining how mission-aligned program design can help broaden participation in CS, particularly at institutions that serve diverse student populations.
+          </p>
+          <div class="pill-list">
+            <span class="pill">Equity and access</span>
+            <span class="pill">Student pathways</span>
+            <span class="pill">Liberal arts contexts</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NSF Links (program-level) -->
+    <section id="nsf-links">
+      <h2>NSF program context</h2>
+      <p class="section-intro">
+        MAP-CS is situated within the National Science Foundation’s broader portfolio of efforts to strengthen STEM education and institutional capacity, including programs that focus on undergraduate STEM transformation.
+      </p>
+
+      <div class="grid">
+
+        <div class="card">
+          <div class="badge"><span class="badge-dot"></span> Program information</div>
+          <p>
+            MAP-CS draws on NSF programs that support innovations in undergraduate STEM education, institutional change, and mission-aligned approaches to curriculum and program design.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW: NSF Support and Community Context -->
+    <section id="nsf-support">
+      <h2>NSF support and community context</h2>
+      <p class="section-intro">
+        The Mission Aligned Programs for Computer Science (MAP-CS) project is supported by the National Science Foundation through multiple coordinated awards and is embedded in an active CS education community.
+      </p>
+
+      <div class="grid">
+        <!-- NSF awards block -->
+        <div class="card">
+          <h3>NSF awards</h3>
+          <p>
+            MAP-CS is supported as a cluster of related NSF grants under the NSF IUES program, with a primary award and two related awards that together span multiple institutions and co-principal investigators.
+          </p>
+          <ul class="links-list">
+            <li>
+              <a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2517967"
+                 target="_blank" rel="noopener noreferrer">
+                Primary NSF Award #2517967
+              </a>
+              <br><small>Transforming Computer Science Curriculum Design at Liberal Arts Institutions.</small>
+            </li>
+            <li>
+              <a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2517968&HistoricalAwards=false"
+                 target="_blank" rel="noopener noreferrer">
+                Related NSF Award #2517968
+              </a>
+              <br><small>Co-PI award connected to the MAP-CS collaboration.</small>
+            </li>
+            <li>
+              <a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2517969&HistoricalAwards=false"
+                 target="_blank" rel="noopener noreferrer">
+                Related NSF Award #2517969
+              </a>
+              <br><small>Co-PI award connected to the MAP-CS collaboration.</small>
+            </li>
+          </ul>
+          <p style="font-size:0.85rem;color:var(--muted);margin-top:0.6rem;">
+            Program: NSF IUES • Project Title: Transforming Computer Science Curriculum Design at Liberal Arts Institutions • Project Duration: Sept. 15, 2025 – Sept. 15, 2028.
+          </p>
+          <p style="font-size:0.8rem;color:var(--muted);margin-top:0.4rem;">
+            Please consult the NSF award pages for the official abstracts and full public details of these grants.
+          </p>
+        </div>
+
+        <!-- Related grants + community context -->
+        <div class="card">
+          <h3>Related co-PI grants</h3>
+          <p>
+            Co-principal investigators on MAP-CS are also involved in related NSF-funded efforts that inform and complement this project, and the MAP-CS work is represented across the three coordinated award numbers listed above.
+          </p>
+          <p style="font-size:0.9rem;color:var(--muted);margin-top:0.4rem;">
+            Together, these grants support cross-institutional collaboration, comparative case studies, and shared resources for liberal arts computing programs.
+          </p>
+
+          <h3 style="margin-top:1.1rem;">SIGCSE and ACM connections</h3>
+          <p>
+            MAP-CS is closely connected to the broader CS education community through engagement with SIGCSE, ACM, and related working groups focused on liberal arts computing.
+          </p>
+          <ul style="font-size:0.9rem;color:var(--muted);margin-left:1rem;margin-top:0.3rem;">
+            <li>
+              Engagement with the SIGCSE Committee on Computing Education in Liberal Arts Colleges, including shared interests in how CS fits within liberal arts missions.
+            </li>
+            <li>
+              Contributions to SIGCSE conferences, workshops, and working groups that focus on curricular models, assessment, and institutional change in computing.
+            </li>
+            <li>
+              Alignment with ACM curricular guidance, adapted for mission-aligned liberal arts contexts.
+            </li>
+          </ul>
+          <p style="font-size:0.85rem;color:var(--muted);margin-top:0.6rem;">
+            Publications relating to the process workbook will be listed and linked soon. 
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Materials / Updates -->
+    <section id="materials">
+      <h2>Project materials and updates</h2>
+      <p class="section-intro">
+        This site will host public-facing materials from the MAP-CS project, including research briefs, implementation guides, faculty resources, and conference presentations as they are released.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Current Version of Project Workbook</h3>
+          <p>
+            Placeholder for most current version of the project workbook.
+          </p>
+          <p style="font-size:0.85rem;color:var(--muted);margin-top:0.3rem;">
+            Check back for linked PDF.
+          </p>
+        </div>
+		
+      <div class="grid">
+        <div class="card">
+          <h3>For departments and institutions</h3>
+          <p>
+            Resources that support mission-aligned CS program design at liberal arts institutions, including example curricular models, program review tools, and case studies.
+          </p>
+          <p style="font-size:0.85rem;color:var(--muted);margin-top:0.3rem;">
+            Check back for downloadable guides and templates as they become available.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>For researchers and practitioners</h3>
+          <p>
+            Public instruments, study summaries, and publications that document lessons learned about curriculum design, institutional alignment, and student pathways in liberal arts CS programs.
+          </p>
+          <p style="font-size:0.85rem;color:var(--muted);margin-top:0.3rem;">
+            Links to open-access publications and presentation materials will be posted to the Publications page as they are released.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="nsf-disclaimer">
+        MAP-CS is supported by the U.S. National Science Foundation. Any opinions, findings, and conclusions or recommendations expressed on this site are those of the authors and do not necessarily reflect the views of the National Science Foundation.
+      </div>
+      <div class="footer-links">
+        <a href="#abstract">Abstract</a>
+        <a href="#goals">Project focus</a>
+        <a href="#nsf-links">NSF program</a>
+        <a href="#nsf-support">NSF support</a>
+        <a href="#materials">Materials</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for in-page navigation
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll('a[href^="#"]');
+      for (const link of links) {
+        link.addEventListener("click", function (e) {
+          const targetId = this.getAttribute("href");
+          if (targetId === "#" || targetId.length === 1) return;
+          const target = document.querySelector(targetId);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          history.replaceState(null, "", targetId);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
