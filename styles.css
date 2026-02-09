@@ -292,7 +292,7 @@ nav a:hover {
 }
 
 .btn-outline {
-  background: black;
+  background: rgba(15, 23, 42, 0.04);
   color: var(--white);
   border: 1px solid rgba(226, 232, 240, 0.3);
 }
