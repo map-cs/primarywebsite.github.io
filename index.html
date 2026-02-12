@@ -1,285 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>MAP-CS Grant | MAP-CS.org</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="MAP-CS project website, sharing an overview of the grant, supporting materials, and ongoing project updates.">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- MODULE: Header / Navigation -->
-  <header>
-    <div class="nav-inner">
-      <div class="logo">
-        <div class="logo-mark" aria-hidden="true"></div>
-        <div>
-          <div class="logo-text-main">MAP-CS</div>
-          <div class="logo-text-sub">Mission Aligned Programs for CS</div>
-        </div>
-      </div>
-      <nav aria-label="Primary">
-        <ul>
-          <li><a href="#abstract">Abstract</a></li>
-          <li><a href="#goals">Goals</a></li>
-          <li><a href="#nsf-links">NSF Context</a></li>
-          <li><a href="#nsf-support">NSF Support</a></li>
-          <li><a href="#materials">Materials</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>MAP-CS Grant | MAP-CS.org</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="MAP-CS project website, sharing an overview of the grant, supporting materials, and ongoing project updates."
+    />
 
-  <main>
-    <!-- MODULE: Hero / Abstract section -->
-    <section class="hero" id="abstract">
-      <div class="hero-cta">
-        <h1 class="hero-heading">MAP-CS: Transforming Computer Science Curriculum Design</h1>
-        <p class="hero-tagline">
-          A multi-institution collaboration supporting mission-aligned computer science programs at liberal arts institutions, with support from the U.S. National Science Foundation.
-        </p>
+    <!-- Fonts: Montserrat (headings) and Roboto (body) per style guide -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-        <div class="hero-buttons">
-          <a href="#nsf-support" class="btn btn-primary">View NSF Awards</a>
-          <a href="#materials" class="btn btn-primary">Explore Project Materials</a>
-          <a href="https://computing-in-the-liberal-arts.github.io/"
-             class="btn btn-primary"
-             target="_blank"
-             rel="noopener noreferrer">
-            Committee Website
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- MODULE: Header Navigation -->
+    <header>
+      <div class="nav-inner">
+        <div class="logo">
+          <a href="#abstract" class="logo-link">
+            <img
+              src="./files/Horizontal_Full Logo_White.png"
+              alt="MAP-CS: Mission Aligned Programs in Computer Science"
+              class="logo-img"
+            />
           </a>
-        </div>
-
-        <p class="hero-notice">
-          MAP-CS is supported by the U.S. National Science Foundation through multiple award numbers under the NSF IUES program.
-        </p>
-      </div>
-
-      <article class="hero-card" aria-label="Project abstract">
-        <div class="hero-pill"><span></span> Project abstract</div>
-        <h2 class="abstract-title">Abstract</h2>
-        <p class="abstract-text">
-          MAP-CS (Mission Aligned Programs for Computer Science) is a research-practice collaboration focused on transforming computer science curriculum design at liberal arts institutions. The project partners faculty, departments, and institutional leaders to develop and study CS programs that are deeply integrated with institutional missions, values, and local community contexts. Through iterative design, implementation, and assessment, MAP-CS aims to build sustainable models for CS pathways that broaden participation and align with liberal arts traditions.
-        </p>
-        <div class="abstract-meta">
-          <div><strong>Funding agency:</strong> U.S. National Science Foundation</div>
-          <div><strong>Program:</strong> <a href="https://www.nsf.gov/funding/opportunities/iuse-edu-improving-undergraduate-stem-education-directorate-stem" target="_blank" rel="noopener noreferrer"> NSF IUES</a></div>
-          <div><strong>Project duration:</strong> Sept. 15, 2025 – Sept. 15, 2028</div>
-        </div>
-      </article>
-    </section>
-
-    <!-- MODULE: Goals / Focus section -->
-    <section id="goals">
-      <h2>Project focus</h2>
-      <p class="section-intro">
-        MAP-CS explores how computer science can be designed and sustained as a mission-aligned program within liberal arts institutions, with attention to curriculum, pathways, and institutional change.
-      </p>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Curriculum and pathways</h3>
-          <p>
-            Designing CS curricula and course sequences that reflect liberal arts values, support diverse student goals, and connect CS with other disciplines across campus.
-          </p>
-          <div class="pill-list">
-            <span class="pill">Curriculum design</span>
-            <span class="pill">Pathways and tracks</span>
-            <span class="pill">Interdisciplinary CS</span>
+          <!-- Visually hidden text for accessibility/SEO -->
+          <div class="logo-text-main sr-only">MAP-CS</div>
+          <div class="logo-text-sub sr-only">
+            Mission Aligned Programs for Computer Science
           </div>
         </div>
 
-        <div class="card">
-          <h3>Institutional alignment</h3>
-          <p>
-            Working with departments and administrators to align CS programs with institutional missions, strategic plans, and community partnerships.
-          </p>
-          <div class="pill-list">
-            <span class="pill">Mission alignment</span>
-            <span class="pill">Institutional change</span>
-            <span class="pill">Community engagement</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Broadening participation</h3>
-          <p>
-            Examining how mission-aligned program design can help broaden participation in CS, particularly at institutions that serve diverse student populations.
-          </p>
-          <div class="pill-list">
-            <span class="pill">Equity and access</span>
-            <span class="pill">Student pathways</span>
-            <span class="pill">Liberal arts contexts</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MODULE: NSF program context -->
-    <section id="nsf-links">
-      <h2>NSF program context</h2>
-      <p class="section-intro">
-        MAP-CS is situated within the National Science Foundation’s broader portfolio of efforts to strengthen STEM education and institutional capacity, including programs that support innovations in undergraduate STEM education.
-      </p>
-
-      <div class="grid">
-        
-
-
-        <div class="card">
-          <div class="badge"><span class="badge-dot"></span> Program information</div>
-          <p>
-            MAP-CS draws on NSF programs that support innovations in undergraduate STEM education, institutional change, and mission-aligned approaches to curriculum and program design.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- MODULE: NSF support + community context -->
-    <section id="nsf-support">
-      <h2>NSF support and community context</h2>
-      <p class="section-intro">
-        The Mission Aligned Programs for Computer Science (MAP-CS) project is supported by the National Science Foundation through multiple coordinated awards and is embedded in an active CS education community.
-      </p>
-
-      <div class="grid">
-        <!-- NSF awards block -->
-        <div class="card">
-          <h3>NSF awards</h3>
-          <p>
-            MAP-CS is supported as a cluster of related NSF grants under the NSF IUES program, with a primary award and two related awards that together span multiple institutions and co-principal investigators.
-          </p>
-          <ul class="links-list">
-            <li>
-              <a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2517967"
-                 target="_blank" rel="noopener noreferrer">
-                Primary NSF Award #2517967
-              </a>
-              <br><small>Transforming Computer Science Curriculum Design at Liberal Arts Institutions.</small>
-            </li>
-            <li>
-              <a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2517968&HistoricalAwards=false"
-                 target="_blank" rel="noopener noreferrer">
-                Related NSF Award #2517968
-              </a>
-              <br><small>Co-PI award connected to the MAP-CS collaboration.</small>
-            </li>
-            <li>
-              <a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2517969&HistoricalAwards=false"
-                 target="_blank" rel="noopener noreferrer">
-                Related NSF Award #2517969
-              </a>
-              <br><small>Co-PI award connected to the MAP-CS collaboration.</small>
-            </li>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#nsf-links">NSF Context</a></li>
+            <li><a href="#nsf-support">NSF Support</a></li>
+            <li><a href="#materials">Materials</a></li>
           </ul>
-          <p class="nsf-meta">
-            Program: NSF IUES • Project Title: Transforming Computer Science Curriculum Design at Liberal Arts Institutions • Project Duration: Sept. 15, 2025 – Sept. 15, 2028.
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- MODULE: Hero / Abstract section -->
+      <section class="hero" id="abstract">
+        <div class="hero-cta">
+          <h1 class="hero-heading">
+            MAP-CS: Transforming Computer Science Curriculum Design
+          </h1>
+          <p class="hero-tagline">
+            A multi-institution collaboration supporting mission-aligned
+            computer science programs at liberal arts institutions, with support
+            from the U.S. National Science Foundation.
           </p>
-          <p class="nsf-note">
-            Please consult the NSF award pages for the official abstracts and full public details of these grants.
+
+          <div class="hero-buttons">
+            <a href="#nsf-support" class="btn btn-primary"
+              >View NSF Awards</a
+            >
+            <a href="#materials" class="btn btn-primary"
+              >Explore Project Materials</a
+            >
+            <a
+              href="https://computing-in-the-liberal-arts.github.io"
+              class="btn btn-outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Committee Website
+            </a>
+          </div>
+
+          <p class="hero-notice">
+            MAP-CS is supported by the U.S. National Science Foundation through
+            multiple award numbers under the NSF IUES program.
           </p>
         </div>
 
-        <!-- Related grants + community context -->
-        <div class="card">
+        <article class="hero-card" aria-label="Project abstract">
+          <div class="hero-pill">
+            <span></span>
+            <span>Project abstract</span>
+          </div>
 
-          <h3 class="subheading">SIGCSE and ACM connections</h3>
-          <p>
-            MAP-CS is closely connected to the broader CS education community through engagement with SIGCSE, ACM, and related working groups focused on liberal arts computing.
+          <h2 class="abstract-title">Abstract</h2>
+
+          <p class="abstract-text">
+            MAP-CS (Mission Aligned Programs for Computer Science) is a
+            research-practice collaboration focused on transforming computer
+            science curriculum design at liberal arts institutions. The project
+            partners faculty, departments, and institutional leaders to develop
+            and study CS programs that are deeply integrated with institutional
+            missions, values, and local community contexts. Through iterative
+            design, implementation, and assessment, MAP-CS aims to build
+            sustainable models for CS pathways that broaden participation and
+            align with liberal arts traditions.
+          <center>
+            <img src="./files/Vertical_Full Logo_Blue Green.png" alt="MAP-CS: Mission Aligned Programs in Computer Science"/>
+            </center>
           </p>
-          <ul class="bullet-list">
-            <li>
-              Engagement with the SIGCSE Committee on Computing Education in Liberal Arts Colleges, including shared interests in how CS fits within liberal arts missions.
-            </li>
-            <li>
-              Contributions to SIGCSE conferences, workshops, and working groups that focus on curricular models, assessment, and institutional change in computing.
-            </li>
-            <li>
-              Alignment with ACM’s curricular guidance, adapted for mission-aligned liberal arts contexts.
-            </li>
-          </ul>
+
+          <div class="abstract-meta">
+            <div>
+              <strong>Funding agency</strong>
+              <div>U.S. National Science Foundation</div>
+            </div>
+            <div>
+              <strong>Program</strong>
+              <div>
+                <a
+                  href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505082"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >NSF IUES</a
+                >
+              </div>
+            </div>
+            <div>
+              <strong>Project duration</strong>
+              <div>Sept. 15, 2025 – Sept. 15, 2028</div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- MODULE: Goals / Focus section -->
+      <section id="goals">
+        <h2>Project focus</h2>
+        <p class="section-intro">
+          MAP-CS explores how computer science can be designed and sustained as
+          a mission-aligned program within liberal arts institutions, with
+          attention to curriculum, pathways, and institutional change.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Curriculum and pathways</h3>
+            <p>
+              Designing CS curricula and course sequences that reflect liberal
+              arts values, support diverse student goals, and connect CS with
+              other disciplines across campus.
+            </p>
+            <div class="pill-list">
+              <span class="pill">Curriculum design</span>
+              <span class="pill">Pathways and tracks</span>
+              <span class="pill">Interdisciplinary CS</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Institutional alignment</h3>
+            <p>
+              Working with departments and administrators to align CS programs
+              with institutional missions, strategic plans, and community
+              partnerships.
+            </p>
+            <div class="pill-list">
+              <span class="pill">Mission alignment</span>
+              <span class="pill">Institutional change</span>
+              <span class="pill">Community engagement</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Broadening participation</h3>
+            <p>
+              Examining how mission-aligned program design can help broaden
+              participation in CS, particularly at institutions that serve
+              diverse student populations.
+            </p>
+            <div class="pill-list">
+              <span class="pill">Equity and access</span>
+              <span class="pill">Student pathways</span>
+              <span class="pill">Liberal arts contexts</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MODULE: NSF program context -->
+      <section id="nsf-links">
+        <h2>NSF program context</h2>
+        <p class="section-intro">
+          MAP-CS is situated within the National Science Foundation’s broader
+          portfolio of efforts to strengthen STEM education and institutional
+          capacity, including programs that support innovations in undergraduate
+          STEM education.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <div class="badge">
+              <span class="badge-dot"></span>
+              <span>Program information</span>
+            </div>
+            <p>
+              MAP-CS draws on NSF programs that support innovations in
+              undergraduate STEM education, institutional change, and
+              mission-aligned approaches to curriculum and program design.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- MODULE: NSF support and community context -->
+      <section id="nsf-support">
+        <h2>NSF support and community context</h2>
+        <p class="section-intro">
+          The Mission Aligned Programs for Computer Science (MAP-CS) project is
+          supported by the National Science Foundation through multiple
+          coordinated awards and is embedded in an active CS education
+          community.
+        </p>
+
+        <div class="grid">
+          <!-- NSF awards block -->
+          <div class="card">
+            <h3>NSF awards</h3>
+            <p>
+              MAP-CS is supported as a cluster of related NSF grants under the
+              NSF IUES program, with a primary award and two related awards that
+              together span multiple institutions and co-principal
+              investigators.
+            </p>
+
+            <ul class="links-list">
+              <li>
+                <a
+                  href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2517967"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Primary NSF Award 2517967
+                </a>
+                <br />
+                <small
+                  >Transforming Computer Science Curriculum Design at Liberal
+                  Arts Institutions.</small
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2517968&HistoricalAwards=false"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Related NSF Award 2517968
+                </a>
+                <br />
+                <small
+                  >Co-PI award connected to the MAP-CS collaboration.</small
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2517969&HistoricalAwards=false"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Related NSF Award 2517969
+                </a>
+                <br />
+                <small
+                  >Co-PI award connected to the MAP-CS collaboration.</small
+                >
+              </li>
+            </ul>
+
+            <p class="nsf-meta">
+              Program: NSF IUES<br />
+              Project Title: Transforming Computer Science Curriculum Design at
+              Liberal Arts Institutions<br />
+              Project Duration: Sept. 15, 2025 – Sept. 15, 2028.
+            </p>
+
+            <p class="nsf-note">
+              Please consult the NSF award pages for the official abstracts and
+              full public details of these grants.
+            </p>
+          </div>
+
+          <!-- Related grants / community context -->
+          <div class="card">
+            <h3 class="subheading">SIGCSE and ACM connections</h3>
+            <p>
+              MAP-CS is closely connected to the broader CS education community
+              through engagement with SIGCSE, ACM, and related working groups
+              focused on liberal arts computing.
+            </p>
+            <ul class="bullet-list">
+              <li>
+                Engagement with the SIGCSE Committee on Computing Education in
+                Liberal Arts Colleges, including shared interests in how CS fits
+                within liberal arts missions.
+              </li>
+              <li>
+                Contributions to SIGCSE conferences, workshops, and working
+                groups that focus on curricular models, assessment, and
+                institutional change in computing.
+              </li>
+              <li>
+                Alignment with ACM’s curricular guidance, adapted for
+                mission-aligned liberal arts contexts.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- MODULE: Materials / Updates -->
+      <section id="materials">
+        <h2>Project materials and updates</h2>
+        <p class="section-intro">
+          This site will host public-facing materials from the MAP-CS project,
+          including research briefs, implementation guides, faculty resources,
+          and conference presentations as they are released.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>For departments and institutions</h3>
+            <p>
+              Resources that support mission-aligned CS program design at liberal
+              arts institutions, including example curricular models, program
+              review tools, and case studies.
+            </p>
+            <p class="muted">
+              Check back for downloadable guides and templates as they become
+              available.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>For researchers and practitioners</h3>
+            <p>
+              Public instruments, study summaries, and publications that
+              document lessons learned about curriculum design, institutional
+              alignment, and student pathways in liberal arts CS programs.
+            </p>
+            <p class="muted">
+              Links to open-access publications and presentation materials will
+              be posted to the Publications page as they are released.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MODULE: Footer with license text -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="nsf-disclaimer">
+            MAP-CS is supported by the U.S. National Science Foundation under
+            Grant Nos. 2517967, 2517968, and 2517969. Any opinions, findings,
+            and conclusions or recommendations expressed on this site are those
+            of the authors and do not necessarily reflect the views of the
+            National Science Foundation.
+          </div>
+
+          <div class="footer-links">
+            <a href="#abstract">Abstract</a>
+            <a href="#goals">Project focus</a>
+            <a href="#nsf-links">NSF context</a>
+            <a href="#nsf-support">NSF support</a>
+            <a href="#materials">Materials</a>
+          </div>
+        </div>
+
+        <div class="license-text">
+          Except where otherwise noted, the textual and educational content on
+          this site (the MAP-CS project website and associated materials in this
+          repository) is licensed under the
+          <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong>
+          license. You are free to share and adapt the material for any purpose,
+          even commercially, provided that you give appropriate credit to the
+          MAP-CS project and its authors, provide a link to the license, and
+          indicate if changes were made. The full legal text of the license is
+          available at
+          <a
+            href="https://creativecommons.org/licenses/by/4.0/legalcode"
+            target="_blank"
+            rel="noopener noreferrer"
+            >https://creativecommons.org/licenses/by/4.0/legalcode</a
+          >.
         </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- MODULE: Materials / Updates -->
-    <section id="materials">
-      <h2>Project materials and updates</h2>
-      <p class="section-intro">
-        This site will host public-facing materials from the MAP-CS project, including research briefs, implementation guides, faculty resources, and conference presentations as they are released.
-      </p>
-
-      <div class="grid">
-        <div class="card">
-          <h3>For departments and institutions</h3>
-          <p>
-            Resources that support mission-aligned CS program design at liberal arts institutions, including example curricular models, program review tools, and case studies.
-          </p>
-          <p class="muted">
-            Check back for downloadable guides and templates as they become available.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>For researchers and practitioners</h3>
-          <p>
-            Public instruments, study summaries, and publications that document lessons learned about curriculum design, institutional alignment, and student pathways in liberal arts CS programs.
-          </p>
-          <p class="muted">
-            Links to open-access publications and presentation materials will be posted to the Publications page as they are released.
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- MODULE: Footer with license text -->
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="nsf-disclaimer">
-          MAP-CS is supported by the U.S. National Science Foundation under Grant Nos. 2517967, 2517968, and 2517969. Any opinions, findings, and conclusions or recommendations expressed on this site are those of the authors and do not necessarily reflect the views of the National Science Foundation.
-        </div>
-        <div class="footer-links">
-          <a href="#abstract">Abstract</a>
-          <a href="#goals">Project focus</a>
-          <a href="#nsf-links">NSF context</a>
-          <a href="#nsf-support">NSF support</a>
-          <a href="#materials">Materials</a>
-        </div>
-      </div>
-
-      <div class="license-text">
-        Except where otherwise noted, the textual and educational content on this site
-        (the MAP-CS project website and associated materials in this repository) is
-        licensed under the <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong> license.
-        You are free to share and adapt the material for any purpose, even commercially,
-        provided that you give appropriate credit to the MAP-CS project and its authors,
-        provide a link to the license, and indicate if changes were made.
-        The full legal text of the license is available at
-        <a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank" rel="noopener noreferrer">
-          https://creativecommons.org/licenses/by/4.0/legalcode
-        </a>.
-      </div>
-    </div>
-  </footer>
-
-  <!-- MODULE: Smooth-scroll behavior -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const links = document.querySelectorAll('a[href^="#"]');
-      for (const link of links) {
-        link.addEventListener("click", function (e) {
-          const targetId = this.getAttribute("href");
-          if (targetId === "#" || targetId.length === 1) return;
-          const target = document.querySelector(targetId);
-          if (!target) return;
-          e.preventDefault();
-          target.scrollIntoView({ behavior: "smooth", block: "start" });
-          history.replaceState(null, "", targetId);
-        });
-      }
-    });
-  </script>
-</body>
+    <!-- MODULE: Smooth-scroll behavior -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll('a[href^="#"]');
+        for (const link of links) {
+          link.addEventListener("click", function (e) {
+            const targetId = this.getAttribute("href");
+            if (!targetId || targetId.length === 1) return;
+            const target = document.querySelector(targetId);
+            if (!target) return;
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            history.replaceState(null, "", targetId);
+          });
+        }
+      });
+    </script>
+  </body>
 </html>
