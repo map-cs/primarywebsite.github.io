@@ -1,9 +1,9 @@
 :root {
   --primary: #022797;       /* Deep blue */
-  --primary-dark: #01134A;  /* Navy */
-  --accent: #5FB175;        /* Green accent */
-  --bg: #EDF3F6;            /* Light background */
-  --text: #01134A;          /* Primary text */
+  --primary-dark: #01134a;  /* Navy */
+  --accent: #5fb175;        /* Green accent */
+  --bg: #edf3f6;            /* Light background */
+  --text: #01134a;          /* Primary text */
   --muted: #6b7280;
   --white: #ffffff;
   --max-width: 960px;
@@ -62,6 +62,10 @@ h4,
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 /* MODULE: Layout shell */
@@ -294,6 +298,18 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Abstract logo block */
+.abstract-logo {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.abstract-logo img {
+  max-height: 72px;
+  width: auto;
+}
+
 /* MODULE: Buttons */
 
 .btn {
@@ -322,6 +338,20 @@ nav a:hover {
   background: #4a9a63;
   transform: translateY(-1px);
   box-shadow: 0 12px 24px rgba(95, 177, 117, 0.4);
+  text-decoration: none;
+}
+
+/* New neutral button for Committee Website */
+.btn-neutral {
+  background: #e5e7eb;
+  color: #111827;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.15);
+}
+
+.btn-neutral:hover {
+  background: #d1d5db;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.2);
   text-decoration: none;
 }
 
@@ -394,6 +424,86 @@ nav a:hover {
   border-radius: 999px;
   background: var(--accent);
   box-shadow: 0 0 0 3px rgba(95, 177, 117, 0.25);
+}
+
+/* Program information layout */
+
+.program-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.3fr);
+  gap: 1.5rem;
+  align-items: start;
+  margin-top: 0.6rem;
+}
+
+.program-subheading {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.program-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 0.9rem 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.program-list li + li {
+  margin-top: 0.4rem;
+}
+
+.program-list li::before {
+  content: "•";
+  color: var(--accent);
+  font-weight: 700;
+  display: inline-block;
+  width: 0.9rem;
+  margin-left: -0.1rem;
+}
+
+.program-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.metric {
+  background: rgba(1, 19, 74, 0.03);
+  border-radius: 12px;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.metric-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.15rem;
+}
+
+.metric-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.metric-note {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 0.1rem;
+}
+
+.program-detail p {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-bottom: 0.65rem;
 }
 
 .nsf-meta {
@@ -500,6 +610,16 @@ footer {
   .footer-top {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 700px) {
+  .program-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .program-metrics {
+    margin-top: 0.5rem;
   }
 }
 
