@@ -732,3 +732,40 @@ footer {
   gap: 0.75rem;
   margin-top: 1rem;
 }
+
+
+.hero-home {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.hero-cta-full {
+  align-items: center;
+}
+
+.hero-tagline-centered {
+  max-width: 52rem;
+  text-align: center;
+}
+
+.hero-buttons-centered {
+  justify-content: center;
+}
+
+.full-width-card {
+  width: 100%;
+  max-width: 100%;
+}
+
+.abstract-centered {
+  margin-inline: auto;
+}
+
+.abstract-centered .hero-pill,
+.abstract-centered .abstract-title {
+  text-align: center;
+  justify-content: center;
+}
+
+.abstract-centered .abstract-meta {
+  justify-content: center;
+}
